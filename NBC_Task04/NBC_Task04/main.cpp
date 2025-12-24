@@ -110,6 +110,7 @@ class AlchemyWorkshop{
             return PotionRecipe("",{ });
         }
 
+        // const + & 써서 참조자로 값을 가져오면 복사없이 출력가능하기때문에 성능이 더 좋아짐
         std::vector<PotionRecipe> serchRecipeByIngredient(std::string ingredient) {
             std::vector<PotionRecipe> serchResult;
             for (int i = 0; i < recipes.size(); ++i) {
